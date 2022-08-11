@@ -11,3 +11,47 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.bg-todo-main{
+  background-color: orange;
+}
+.type-todo-section input,textarea{
+border:none;
+border-radius: 2px;
+outline: none;
+}
+.type-todo-section h2{
+  color: #f4f4f4;
+  
+}
+
+.type-todo-section input{
+  
+  min-height:3rem;
+ 
+  
+}
+
+
+.type-todo-section textarea{
+  min-height:10rem;
+}
+
+.type-todo-section button{
+  background-color: green;
+  color: #f4f4f4;
+}
+
+.todo-main{
+  height:100vh;
+  
+}
+
+.todo-title {
+  background-color: green;
+  color: #f4f4f4;
+}
+
+.todo-box p{
+  background-color: #f4f4f4;
+}
