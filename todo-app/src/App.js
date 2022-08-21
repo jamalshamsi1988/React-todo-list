@@ -21,14 +21,21 @@ console.log(todoList);
       <section className="container">
         <section className="todo-main row align-items-center">
           <section className="col-md-6 h-100">
-            <TypeTodo  setTodoList={setTodoList} todoList={todoList}  />
+            <TypeTodo setTodoList={setTodoList} todoList={todoList} />
           </section>
           <section className="col-md-6 h-100">
-            {todoList.map(item=>(<Todo title={item.title} text={item.text} key={item.id}
+            {todoList.map((item) => (
+              <Todo
+                title={item.title}
+                text={item.text}
+                key={item.id}
+                setTodoList={setTodoList}
+                todoList={todoList}
+                id={item.id}
 
-            /*todoText={todoText} todoTitle={todoTitle} */
-            />))}
-            
+                /*todoText={todoText} todoTitle={todoTitle} */
+              />
+            ))}
           </section>
         </section>
       </section>
