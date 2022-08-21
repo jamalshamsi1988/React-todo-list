@@ -12,8 +12,7 @@ const App = () => {
   // const [todoText, setTodoText] = useState("");
 const [todoList, setTodoList] = useState([
   { title: "job1", text: "salam01" },
-  { title: "job2", text: "salam02" },
-  { title: "job3", text: "salam03" },
+  
 ]);
 
 
@@ -22,7 +21,7 @@ const [todoList, setTodoList] = useState([
       <section className="container">
         <section className="todo-main row align-items-center">
           <section className="col-md-6 h-100">
-            <TypeTodo  /*setTodoTitle={setTodoTitle} setTodoText={setTodoText} */ />
+            <TypeTodo  setTodoList={setTodoList} todoList={todoList} />
           </section>
           <section className="col-md-6 h-100">
             {todoList.map(item=>(<Todo title={item.title} text={item.text}
